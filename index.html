@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Spotify - Your Favorite Music is Here</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="logo.png" type="image/x-icon" />
 	</head>
 	<body>
 		<nav>
@@ -28,7 +29,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="1">05:34</span>
 								<i
 									id="1"
 									class="songItemPlay far fa-play-circle"></i
@@ -42,7 +43,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="2">05:34</span>
 								<i
 									id="2"
 									class="songItemPlay far fa-play-circle"></i
@@ -56,7 +57,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="3">05:34</span>
 								<i
 									id="3"
 									class="songItemPlay far fa-play-circle"></i
@@ -70,7 +71,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="4">05:34</span>
 								<i
 									id="4"
 									class="songItemPlay far fa-play-circle"></i
@@ -84,7 +85,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="5">05:34</span>
 								<i
 									id="5"
 									class="songItemPlay far fa-play-circle"></i
@@ -98,7 +99,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="6">05:34</span>
 								<i
 									id="6"
 									class="songItemPlay far fa-play-circle"></i
@@ -112,7 +113,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="7">05:34</span>
 								<i
 									id="7"
 									class="songItemPlay far fa-play-circle"></i
@@ -126,7 +127,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="8">05:34</span>
 								<i
 									id="8"
 									class="songItemPlay far fa-play-circle"></i
@@ -140,7 +141,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="9">05:34</span>
 								<i
 									id="8"
 									class="songItemPlay far fa-play-circle"></i
@@ -154,7 +155,7 @@
 
 						<span class="songListPlay"
 							><span class="timeStamp"
-								>05:34
+								><span class="duration" id="10">05:34</span>
 								<i
 									id="10"
 									class="songItemPlay far fa-play-circle"></i
@@ -181,8 +182,17 @@
 				<i id="next" class="fas fa-2x fa-step-forward"></i>
 			</div>
 			<div class="songInfo">
-				<img src="playing.gif" alt="equalizer" width="42px" id="gif" />
-				<span id="songTitle"> </span>
+				<div>
+					<img
+						src="playing.gif"
+						alt="equalizer"
+						width="42px"
+						id="gif" />
+					<span id="songTitle"> </span>
+				</div>
+				<div>
+					<span id="songDuration"></span>
+				</div>
 			</div>
 		</div>
 		<script

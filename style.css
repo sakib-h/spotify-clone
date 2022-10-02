@@ -104,6 +104,9 @@ nav ul li {
 
 .songInfo {
 	position: absolute;
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
 	left: 10vw;
 	font-family: "Varela Round", sans-serif;
 }
