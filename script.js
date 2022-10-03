@@ -107,7 +107,7 @@ myProgressBar.addEventListener("change", () => {
 	audioElement.currentTime =
 		(myProgressBar.value * audioElement.duration) / 100;
 });
-const makeAllPlays = () => {
+const makeAllPause = () => {
 	songItemPlay.forEach((element) => {
 		element.classList.remove("fa-pause-circle");
 		element.classList.add("fa-play-circle");
@@ -116,7 +116,7 @@ const makeAllPlays = () => {
 
 songItemPlay.forEach((element) => {
 	element.addEventListener("click", (e) => {
-		makeAllPlays();
+		makeAllPause();
 		songIndex = parseInt(e.target.id);
 		e.target.classList.remove("fa-play-circle");
 		e.target.classList.add("fa-pause-circle");
