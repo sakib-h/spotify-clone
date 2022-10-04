@@ -120,18 +120,11 @@ songItemPlay.forEach((element) => {
 		if (e.target.classList == "songItemPlay far fa-play-circle") {
 			makeAllPause();
 			songIndex = parseInt(e.target.id);
-
-			if (audioElement.currentTime <= 0) {
-				audioElement.src = `songs/${songIndex}.mp3`;
-				audioElement.currentTime = 0;
-				audioElement.play();
-			} else {
-				audioElement.play();
-			}
-
+			audioElement.src = `songs/${songIndex}.mp3`;
+			audioElement.currentTime = 0;
+			audioElement.play();
 			e.target.classList.remove("fa-play-circle");
 			e.target.classList.add("fa-pause-circle");
-
 			masterPlay.classList.remove("fa-play-circle");
 			masterPlay.classList.add("fa-pause-circle");
 			songTitle.innerText = songs[songIndex - 1].songName;
